@@ -20,7 +20,7 @@ interface InitDialogProps {
 
 const InitDialog: React.FC<InitDialogProps> = ({ open, onOpenChange }) => {
   const [jsonData, setJsonData] = useState("");
-  const [remoteUrl, setRemoteUrl] = useState("");
+  const [remoteUrl, setRemoteUrl] = useState("https://tv-auth.o0oo0o.workers.dev/?key=");
 
   const handleImportFromFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
