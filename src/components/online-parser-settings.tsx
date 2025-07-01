@@ -16,7 +16,7 @@ const OnlineParserSettings: React.FC = () => {
 
   useEffect(() => {
     // 初始化解析列表
-    const list = JSON.parse(localStorage.getItem(PARSER_LIST_KEY) || "[]");
+    const list = JSON.parse(localStorage.getItem(PARSER_LIST_KEY) || '[{"name":"虾米解析","url":"https://jx.xmflv.com/?url={url}"},{"name":"虾米解析2","url":"https://jx.xmflv.cc/?url={url}"},{"name":"剖云解析","url":"https://www.pouyun.com/?url={url}"},{"name":"CK解析","url":"https://www.ckplayer.vip/jiexi/?url={url}"},{"name":"盘古解析","url":"http://www.pangujiexi.com/jiexi/?url={url}"},{"name":"m3u8解析","url":"http://jx.m3u8.tv/jiexi/?url={url}"}]');
     setParserList(list);
   }, []);
 
